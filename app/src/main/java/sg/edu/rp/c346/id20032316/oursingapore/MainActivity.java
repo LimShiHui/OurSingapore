@@ -90,6 +90,9 @@ public class MainActivity extends AppCompatActivity {
                                     Toast.LENGTH_SHORT).show();
                         }
 
+                        al.clear();
+                        al.addAll(dbh.getAllIsland());
+                        ca.notifyDataSetChanged();
                     }
                 });
 
